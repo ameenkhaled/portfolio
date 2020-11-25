@@ -1,0 +1,48 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: auto;
+  align-items: center;
+  padding: 1rem;
+  height: calc(100vh - 2.5rem);
+
+  &__profile {
+    max-width: 75%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    animation: profile-reveal 0.75s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__message {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.075rem;
+    word-spacing: 0.5rem;
+
+    animation: message-reveal 2s ease-in;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    .--special {
+      font-size: 2rem;
+      color: var(--accent-color-2);
+      font-weight: bold;
+    }
+
+    .--special-2 {
+      font-weight: bold;
+    }
+  }
+}

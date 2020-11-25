@@ -1,0 +1,22 @@
+@keyframes profile-reveal {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes message-reveal {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  65% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
