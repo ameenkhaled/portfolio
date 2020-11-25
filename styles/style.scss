@@ -176,3 +176,46 @@ a {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: var(--main-color);
+  }
+  .top {
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__backgroundAndShadow {
+      display: none;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__menu {
+      position: static;
+      order: 2;
+      padding: 0;
+      width: auto;
+      &__main-links {
+        flex-direction: row;
+        width: fit-content;
+        display: inline-flex;
+      }
+      &__secondry-links {
+        position: static;
+        width: fit-content;
+        display: inline-flex;
+
+        .close {
+          display: none;
+        }
+      }
+    }
+  }
+}
