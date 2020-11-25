@@ -1,9 +1,10 @@
 @media screen and (min-width: 768px) {
   header {
-    background-color: var(--main-color);
+    overflow: auto;
   }
   .top {
     max-width: 1024px;
+    height: auto;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +12,10 @@
     padding-bottom: 1rem;
 
     &__backgroundAndShadow {
-      display: none;
+      position: fixed;
+      left: 0;
+      width: 100vw;
+      height: 56px;
     }
 
     &__toggle {
@@ -20,18 +24,25 @@
 
     &__menu {
       position: static;
+      flex-direction: row;
       order: 2;
       padding: 0;
       width: auto;
+
       &__main-links {
         flex-direction: row;
         width: fit-content;
         display: inline-flex;
+        li a {
+          font-size: 1.5rem;
+        }
       }
+
       &__secondry-links {
         position: static;
         width: fit-content;
         display: inline-flex;
+        z-index: 10;
 
         .close {
           display: none;
