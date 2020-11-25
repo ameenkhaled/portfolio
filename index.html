@@ -12,7 +12,9 @@
   <title>Portfolio</title>
   <meta name="author" content="Ameen Khaled">
 
+  <script src="https://unpkg.com/scrollreveal" defer></script>
   <script src="./scripts/main.js" defer></script>
+
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     <nav class="top">
       <div class="top__menu">
         <ul class="top__menu__main-links">
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Work</a></li>
@@ -38,9 +40,7 @@
                 </span>
             </a>
           </li>
-        </ul>
-
-        
+        </ul>        
       </div>
 
       <div class="top__backgroundAndShadow"></div>
@@ -56,7 +56,18 @@
   </header>
 
   <main>
-    main
+    <section class="home" id="home">
+      
+      <div class="home__profile">
+        <img src="./images/ameen-khaled.jpg" alt="ameen khaled" title="it's me Ameen">
+      </div>
+      <p class="home__message">
+        Welcome,<br>
+        I'm <span class="--special" >Ameen Khaled</span><br>
+        a <span class="--special-2">Designer / Developer</span>
+      </p>
+      
+    </section>
   </main>
   <footer></footer>
 </body>
